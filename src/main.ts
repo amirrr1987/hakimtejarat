@@ -3,7 +3,7 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-
+import 'ant-design-vue/dist/antd.less';
 import 'virtual:windi.css'
 import 'virtual:windi-devtools'
 
