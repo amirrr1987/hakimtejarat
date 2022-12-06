@@ -20,7 +20,7 @@ import TheContainer from "@/components/global/TheContainer.vue";
 @prefix: ~"the-user-footer";
 .@{prefix} {
   .footer-top {
-    @apply bg-green-300 text-green-50 py-12 flex;
+    @apply bg-green-500 text-green-50 py-12 flex;
   }
   .footer-bottom {
     @apply bg-green-800 text-green-50 py-4 text-center;
