@@ -1,3 +1,7 @@
 export default {
-    aboutMe: "درباره من",
+    home: "home",
+    about: "about",
+    products: "products",
+    blogs: "blogs",
+    contact: "contact",
 };

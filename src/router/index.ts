@@ -3,6 +3,7 @@ import TheUser from '@/views/TheUser.vue'
 import TheUserHome from '@/pages/user/TheUserHome.vue'
 import TheUserAbout from '@/pages/user/TheUserAbout.vue'
 import TheUserProducts from '@/pages/user/TheUserProducts.vue'
+import TheUserBlogs from '@/pages/user/TheUserBlogs.vue'
 import TheUserContact from '@/pages/user/TheUserContact.vue'
 
 const router = createRouter({
@@ -27,6 +28,11 @@ const router = createRouter({
           path: '/products',
           name: 'TheUserProducts',
           component: TheUserProducts,
+        },
+        {
+          path: '/blogs',
+          name: 'TheUserBlogs',
+          component: TheUserBlogs,
         },
         {
           path: '/contact-us',
