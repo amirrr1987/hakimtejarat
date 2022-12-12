@@ -1,5 +1,5 @@
 <template>
-  <div :class="props.full ? 'w-screen' : 'container mx-auto' ">
+  <div :class="props.full ? 'w-screen' : 'container mx-auto px-4' ">
      <slot></slot>
   </div>
 </template>

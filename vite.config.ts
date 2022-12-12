@@ -19,5 +19,5 @@ export default defineConfig({
         additionalData: '@root-entry-name: default;',
       },
     },
-  },
+  }
 })

@@ -1,19 +1,52 @@
 <template>
-  <TheContainer full>
-    <!-- <div class="absolute z-10">
-      <CarouselSocial />
-    </div> -->
-    <!-- <Carousel autoplay>
-     
-        <img src="https://dinehiran.ir/new-template4/assets/img/01.jpg" alt="" />
-      
-        <img src="https://dinehiran.ir/new-template4/assets/img/02.jpg" alt="" />
-    
-        <img src="https://dinehiran.ir/new-template4/assets/img/03.jpg" alt="" />
-      
-    </Carousel> -->
+  <div :class="[`the-user-carousel`]">
+    <TheContainer>
 
-    <Carousel :items-to-show="1.5">
+      <Carousel autoplay>
+
+        <div class="!flex justify-between items-center">
+          <div>
+            <h3>sdfsdf</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </p>
+            <Button type="primary">
+              more
+            </Button>
+          </div>
+          <img src="https://dinehiran.ir/new-template4/assets/img/specia-banner/ghalb-va-oroogh.png" alt="" />
+        </div>
+
+        <div class="!flex justify-between items-center">
+          <div>
+            <h3>sdfsdf</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </p>
+            <Button type="primary">
+              more
+            </Button>
+          </div>
+          <img src="https://dinehiran.ir/new-template4/assets/img/specia-banner/ghalb-va-oroogh.png" alt="" />
+        </div>
+
+        <div class="!flex justify-between items-center">
+          <div>
+            <h3>sdfsdf</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </p>
+            <Button type="primary">
+              more
+            </Button>
+          </div>
+          <img src="https://dinehiran.ir/new-template4/assets/img/specia-banner/ghalb-va-oroogh.png" alt="" />
+        </div>
+
+
+      </Carousel>
+
+      <!-- <Carousel :items-to-show="1.5">
       <Slide class="w-full" v-for="(item,index) in items" :key="index">
         <img  :src="item.url" alt="" />
       </Slide>
@@ -22,8 +55,9 @@
         <Navigation />
         <Pagination />
       </template>
-    </Carousel>
-  </TheContainer>
+    </Carousel> -->
+    </TheContainer>
+  </div>
 </template>
 <script setup lang="ts">
 // import { Carousel } from "ant-design-vue";
@@ -31,7 +65,7 @@ import CarouselSocial from "./CarouselSocial.vue";
 import TheContainer from "./TheContainer.vue";
 
 import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import { Carousel, Button } from "ant-design-vue/es";
 import { reactive } from "vue";
 
 const items = reactive([
@@ -50,7 +84,16 @@ const items = reactive([
 ]);
 </script>
 
-<style scoped>
+<style>
+.the-user-carousel {
+
+  background-image: url('https://dinehiran.ir/new-template4/assets/img/specia-banner/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 721px;
+  width: 100%;
+}
+
 /* For demo */
 /* .ant-carousel :deep(.slick-slide) {
   text-align: center;

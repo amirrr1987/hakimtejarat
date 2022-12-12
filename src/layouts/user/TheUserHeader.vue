@@ -12,6 +12,6 @@ import TheCarousel from "@/components/global/TheCarousel.vue";
 <style lang="less">
 @prefix: ~"the-user-header";
 .@{prefix} {
- 
+
 }
 </style>
