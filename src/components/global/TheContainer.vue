@@ -5,7 +5,7 @@
 </template>
 <script setup lang="ts">
 interface Props {
-  full: boolean
+  full?: boolean
 }
 const props = withDefaults(defineProps<Props>(), {
   full: false,

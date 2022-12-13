@@ -7,6 +7,8 @@ import i18n from "@/i18n";
 import 'ant-design-vue/dist/antd.less';
 import 'virtual:windi.css'
 import 'virtual:windi-devtools'
+import '@/assets/styles/index.css'
+
 
 const app = createApp(App)
 

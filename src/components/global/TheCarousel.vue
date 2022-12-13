@@ -1,50 +1,22 @@
 <template>
-  <div :class="[`the-user-carousel`]">
+  <div :class="[`the-user-carousel bg-red-500 flex items-end`]">
     <TheContainer>
-
-      <Carousel autoplay>
-
-        <div class="!flex justify-between items-center">
-          <div>
-            <h3>sdfsdf</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing.
-            </p>
-            <Button type="primary">
-              more
-            </Button>
+      <Carousel autoplay class="hidden lg:block w-2/3 mx-auto" effect="fade">
+        <template v-for="item in items" :key="index">
+          <div class="!flex justify-between items-center">
+            <div>
+              <h3>{{ item.label }}</h3>
+              <p>
+                {{ item.content }}
+              </p>
+              <Button type="primary"> more </Button>
+            </div>
+            <img :src="item.url" alt="" />
           </div>
-          <img src="https://dinehiran.ir/new-template4/assets/img/specia-banner/ghalb-va-oroogh.png" alt="" />
-        </div>
-
-        <div class="!flex justify-between items-center">
-          <div>
-            <h3>sdfsdf</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing.
-            </p>
-            <Button type="primary">
-              more
-            </Button>
-          </div>
-          <img src="https://dinehiran.ir/new-template4/assets/img/specia-banner/ghalb-va-oroogh.png" alt="" />
-        </div>
-
-        <div class="!flex justify-between items-center">
-          <div>
-            <h3>sdfsdf</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing.
-            </p>
-            <Button type="primary">
-              more
-            </Button>
-          </div>
-          <img src="https://dinehiran.ir/new-template4/assets/img/specia-banner/ghalb-va-oroogh.png" alt="" />
-        </div>
-
-
+        </template>
       </Carousel>
+
+      
 
       <!-- <Carousel :items-to-show="1.5">
       <Slide class="w-full" v-for="(item,index) in items" :key="index">
@@ -70,15 +42,18 @@ import { reactive } from "vue";
 
 const items = reactive([
   {
-    content: '',
-    url: "https://dinehiran.ir/new-template4/assets/img/01.jpg",
+    label: 'title',
+    content: "sdfsdf",
+    url: "./images/01.png",
   },
   {
-    content: '',
-    url: "https://dinehiran.ir/new-template4/assets/img/02.jpg",
+    label: 'title',
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cum, dolor odit tenetur libero laborum fuga, totam eligendi sequi illo sed aspernatur veniam? Velit molestiae qui quaerat? Aperiam, hic sequi?",
+    url: "./images/02.png",
   },
   {
-    content: '',
+    label: 'title',
+    content: "asdasd",
     url: "https://dinehiran.ir/new-template4/assets/img/03.jpg",
   },
 ]);
@@ -86,12 +61,11 @@ const items = reactive([
 
 <style>
 .the-user-carousel {
-
-  background-image: url('https://dinehiran.ir/new-template4/assets/img/specia-banner/bg2.jpg');
+  background-image: url("https://dinehiran.ir/new-template4/assets/img/specia-banner/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 721px;
   width: 100%;
+  aspect-ratio: 1920 / 500;
 }
 
 /* For demo */

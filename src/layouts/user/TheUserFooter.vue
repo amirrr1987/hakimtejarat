@@ -2,28 +2,107 @@
   <footer :class="[`the-user-footer`]">
     <div class="footer-top">
       <TheContainer>
-        <ul>
-          <li>sdf</li>
-          <li>sdf</li>
-          <li>sdf</li>
-        </ul>
+        <div class="grid lg:grid-cols-4 gap-y-4 lg:gap-y-0 lg:gap-x-4">
+          <div>
+            <img
+              src="https://www.irandarouk.com/sites/all/themes/pourateb/assets/images/logo-f.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+              quaerat vel dignissimos delectus voluptate, fugit quisquam fugiat
+              eos, fuga rem, doloribus placeat quo? Aliquid deleniti suscipit
+              facere natus ut sit?
+            </p>
+          </div>
+          <div class="">
+            <h4 class="text-li">sdfsd</h4>
+            <hr>
+            <ul>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+          </ul>
+          </div>
+          <div class="">
+            <h4 class="text-li">sdfsd</h4>
+            <hr>
+            <ul>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+          </ul>
+          </div>
+          <div class="">
+            <h4 class="text-li">sdfsd</h4>
+            <hr>
+            <ul>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+            <li class="flex gap-x-1 items-center">
+              <Icon icon="mdi-light:home" />
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </li>
+          </ul>
+          </div>
+        </div>
       </TheContainer>
     </div>
-    <div class="footer-bottom">copyright</div>
+    <div class="footer-bottom">
+      copyright Lorem, ipsum dolor sit amet consectetur adipisicing.
+    </div>
   </footer>
 </template>
 <script setup lang="ts">
 import TheContainer from "@/components/global/TheContainer.vue";
+import { Icon } from '@iconify/vue';
+
 </script>
 
 <style lang="less">
 @prefix: ~"the-user-footer";
 .@{prefix} {
   .footer-top {
-    @apply bg-green-500 text-green-50 py-12 flex;
+    @apply bg-gray-800 text-green-50 py-12 flex;
   }
   .footer-bottom {
-    @apply bg-green-800 text-green-50 py-4 text-center;
+    @apply bg-gray-900 text-green-50 py-4 text-center;
   }
 }
 </style>

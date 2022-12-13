@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Primary';
+    src: 
+        url('../fonts/iranyekanwebregularfanum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Primary';
+    src:
+        url('../fonts/iranyekanwebmediumfanum.woff') format('woff');
+    font-weight: 500;
+    font-style: 500;
+}
+@font-face {
+    font-family: 'Primary';
+    src:
+        url('../fonts/iranyekanwebblackfanum.woff') format('woff');
+    font-weight: 900;
+    font-style: 900;
+}
+@font-face {
+    font-family: 'Primary';
+    src:
+        url('../fonts/iranyekanwebboldfanum.woff') format('woff');
+    font-weight: 700;
+    font-style: 700;
+}
