@@ -1,36 +1,20 @@
 <template>
   <main :class="[`the-user-home`]">
-    <!-- <TheSection>
-      <TheContainer>
-        <div class="flex">
-          <div>
-            <h4>title</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
-              eveniet quod aut, quae labore maxime? Odio illum excepturi iste
-              voluptatum. Rerum, architecto placeat. Asperiores delectus magnam
-              vero rerum, aut veniam.
-            </p>
-          </div>
-          <img
-            src="https://dinehiran.ir/new-template4/assets/img/wiki/new/%D8%A2%D8%B1%D8%AA%DB%8C%D8%B4%D9%88.jpg"
-            alt=""
-          />
-        </div>
-      </TheContainer>
-    </TheSection> -->
+    <TheUserHomeAbout />
 
-    <!-- <TheSection>
+    <TheSection>
       <TheContainer>
         <div class="grid grid-cols-12">
-          <div class="col-start-3 col-end-11 grid grid-cols-6 gap-4">
+          <div
+            class="col-start-1 col-end-13 md:col-start-3 md:col-end-11 grid grid-cols-6 gap-4"
+          >
             <div class="col-span-6 mb-4">
               <h3 class="text-4xl font-medium capitalize text-center mb-4">
                 دسته بندی محصولات
               </h3>
               <hr class="border-green-600 border-b-2 rounded-full" />
             </div>
-            <template v-for="category in categories" :key="index">
+            <template v-for="category in categories" :key="category">
               <div class="flex flex-col items-center gap-y-2">
                 <img
                   :src="category.img"
@@ -43,14 +27,28 @@
           </div>
         </div>
       </TheContainer>
-    </TheSection> -->
+    </TheSection>
 
-    <!-- <TheSection class="bg-green-200">
-      <TheContainer> sdfsdf </TheContainer>
+    <TheSection class="bg-green-200 bg">
+      <TheContainer>
+        <div class="grid lg:grid-cols-2">
+          <div class="lg:col-start-2">
+            <h4>title</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+              accusantium ab excepturi, totam id itaque aperiam doloremque
+              officia laudantium esse iure. Vero perferendis enim rem sint ipsa
+              quasi dignissimos odit.
+            </p>
+          </div>
+        </div>
+      </TheContainer>
     </TheSection>
 
     <TheSection>
-      <TheContainer> sdfsdf </TheContainer>
+      <TheContainer>
+        <h4>افتخارات</h4>
+      </TheContainer>
     </TheSection>
 
     <TheSection class="bg-green-200">
@@ -63,7 +61,7 @@
 
     <TheSection class="bg-green-200">
       <TheContainer> sdfsdf </TheContainer>
-    </TheSection> -->
+    </TheSection>
 
     <TheSection>
       <TheContainer>
@@ -76,7 +74,7 @@
         <div
           class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-12 md:gap-x-8 md:gap-y-0 xl:gap-x-12 mb-8"
         >
-          <template v-for="article in articles" :key="index">
+          <template v-for="article in articles" :key="article">
             <figure>
               <img
                 class="w-full mb-4 rounded-t"
@@ -102,6 +100,7 @@
 <script setup lang="ts">
 import TheContainer from "@/components/global/TheContainer.vue";
 import TheSection from "@/components/global/TheSection.vue";
+import TheUserHomeAbout from "@/components/TheUserHome/About.vue";
 import { reactive } from "vue";
 import { Button } from "ant-design-vue/es";
 
@@ -187,5 +186,9 @@ const articles = reactive([
 <style lang="less">
 @prefix: ~"the-user-home";
 .@{prefix} {
+  .bg {
+    background-image: url("https://www.irandarouk.com/sites/all/themes/pourateb/assets/images/a1.jpg");
+    height: 600px;
+  }
 }
 </style>

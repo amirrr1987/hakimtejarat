@@ -2,9 +2,9 @@
   <div :class="[`the-user-carousel bg-red-500 flex items-end`]">
     <TheContainer>
       <Carousel autoplay class="hidden lg:block w-2/3 mx-auto" effect="fade">
-        <template v-for="item in items" :key="index">
-          <div class="!flex justify-between items-center">
-            <div>
+        <template v-for="item in items" :key="item.order">
+          <div class="!grid grid-cols-3 items-center">
+            <div class="col-span-2">
               <h3>{{ item.label }}</h3>
               <p>
                 {{ item.content }}
@@ -42,16 +42,20 @@ import { reactive } from "vue";
 
 const items = reactive([
   {
+    order: 1,
     label: 'title',
-    content: "sdfsdf",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cum, dolor odit tenetur libero laborum fuga, totam eligendi sequi illo sed aspernatur veniam? Velit molestiae qui quaerat? Aperiam, hic sequi?",
+
     url: "./images/01.png",
   },
   {
+    order:2,
     label: 'title',
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cum, dolor odit tenetur libero laborum fuga, totam eligendi sequi illo sed aspernatur veniam? Velit molestiae qui quaerat? Aperiam, hic sequi?",
     url: "./images/02.png",
   },
   {
+    order:3,
     label: 'title',
     content: "asdasd",
     url: "https://dinehiran.ir/new-template4/assets/img/03.jpg",
