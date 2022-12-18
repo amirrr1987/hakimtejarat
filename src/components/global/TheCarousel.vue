@@ -1,5 +1,5 @@
 <template>
-  <div :class="[`the-user-carousel bg-red-500 flex items-end`]">
+  <div :class="[`the-user-carousel`]">
     <TheContainer>
       <Carousel autoplay class="hidden lg:block w-2/3 mx-auto" effect="fade">
         <template v-for="item in items" :key="item.order">
@@ -58,7 +58,7 @@ const items = reactive([
     order:3,
     label: 'title',
     content: "asdasd",
-    url: "https://dinehiran.ir/new-template4/assets/img/03.jpg",
+    url: "",
   },
 ]);
 </script>
@@ -66,23 +66,12 @@ const items = reactive([
 <style>
 .the-user-carousel {
   background-image: url("https://dinehiran.ir/new-template4/assets/img/specia-banner/bg2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
   aspect-ratio: 1920 / 500;
+  @apply  bg-red-500 flex items-end bg-cover bg-no-repeat w-full relative;
 }
-
-/* For demo */
-/* .ant-carousel :deep(.slick-slide) {
-  text-align: center;
-  height: 450px;
-  line-height: 450px;
-  background: #364d79;
-  overflow: hidden;
-  width: 100vw !important;
+.the-user-carousel::after{
+  /* content: '';
+  @apply w-full h-20 absolute -bottom-20;
+  background-image: linear-gradient(to bottom, #eeeff1, #f2f3f4, #f7f7f8, #fbfbfb, #ffffff); */
 }
-
-.ant-carousel :deep(.slick-slide h3) {
-  color: #fff;
-} */
 </style>

@@ -1,6 +1,6 @@
 <template>
   <header :class="[`the-user-header`]">
-    <TheNavbar class="absolute inset-x-0 top-0" />
+    <TheNavbar class="" />
     <TheCarousel />
   </header>
 </template>

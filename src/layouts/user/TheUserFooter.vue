@@ -5,15 +5,22 @@
         <div class="grid lg:grid-cols-4 gap-y-4 lg:gap-y-0 lg:gap-x-4">
           <div>
             <img
+            class="mb-4"
               src="https://www.irandarouk.com/sites/all/themes/pourateb/assets/images/logo-f.png"
               alt=""
             />
-            <p>
+            <p class="mb-4">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
               quaerat vel dignissimos delectus voluptate, fugit quisquam fugiat
               eos, fuga rem, doloribus placeat quo? Aliquid deleniti suscipit
               facere natus ut sit?
             </p>
+            <div class="flex justify-between text-2xl">
+              <Icon icon="icon-park-outline:instagram" />
+              <Icon icon="icon-park-outline:telegram" />
+              <Icon icon="icon-park-outline:skating" />
+              <Icon icon="icon-park-outline:instagram" />
+            </div>
           </div>
           <div class="">
             <h4 class="text-li">sdfsd</h4>
