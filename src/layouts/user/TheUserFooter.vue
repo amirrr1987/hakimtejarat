@@ -24,7 +24,7 @@
           </div>
           <div class="">
             <h4 class="text-li">sdfsd</h4>
-            <hr>
+            <Divider class="border-t-red-400"  />
             <ul>
             <li class="flex gap-x-1 items-center">
               <Icon icon="mdi-light:home" />
@@ -46,7 +46,7 @@
           </div>
           <div class="">
             <h4 class="text-li">sdfsd</h4>
-            <hr>
+            <Divider class="border-t-red-400"  />
             <ul>
             <li class="flex gap-x-1 items-center">
               <Icon icon="mdi-light:home" />
@@ -68,7 +68,7 @@
           </div>
           <div class="">
             <h4 class="text-li">sdfsd</h4>
-            <hr>
+            <Divider class="border-t-red-400"  />
             <ul>
             <li class="flex gap-x-1 items-center">
               <Icon icon="mdi-light:home" />
@@ -99,7 +99,7 @@
 <script setup lang="ts">
 import TheContainer from "@/components/global/TheContainer.vue";
 import { Icon } from '@iconify/vue';
-
+import { Divider } from "ant-design-vue/es";
 </script>
 
 <style lang="less">

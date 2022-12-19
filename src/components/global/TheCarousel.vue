@@ -67,10 +67,12 @@ const items = reactive([
 .the-user-carousel {
   background-image: url("https://dinehiran.ir/new-template4/assets/img/specia-banner/bg2.jpg");
   aspect-ratio: 1920 / 500;
-  @apply  bg-red-500 flex items-end bg-cover bg-no-repeat w-full relative;
+  @apply flex items-end bg-cover bg-no-repeat w-full relative;
 }
 .the-user-carousel::after{
+  content: '';
   /* content: '';
+  
   @apply w-full h-20 absolute -bottom-20;
   background-image: linear-gradient(to bottom, #eeeff1, #f2f3f4, #f7f7f8, #fbfbfb, #ffffff); */
 }

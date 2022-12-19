@@ -1,7 +1,7 @@
 export default {
-    home: "home",
-    about: "about",
-    products: "products",
-    blogs: "blogs",
-    contact: "contact",
+    home: "صفحه اصلی",
+    about: "درباره ما",
+    products: "محصولات",
+    blogs: "مقاله ها",
+    contact: "تماس با ما",
 };
