@@ -5,29 +5,19 @@ class Menu {
     async create(req,res){
         const myBody = _.pick(req.body, "name url icon")
 
-        try{
-            const {success, error} = await MenuValidator.create(myBody)
-            if(!success){
-                return res.status(400).send(error.issues)
-            }
-        }
-        catch (e) {
-            console.log(e)
+        const {success, error} = await MenuValidator.create(myBody)
+        if(!success){
+            return res.status(400).send(error.issues)
         }
 
-        try{
-            const menu = await new MenuModel(myBody)
-            await menu.save()
-            return res.status(200).send({
-                code: 200,
-                success: true,
-                data: menu,
-                message: "route found"
-            })
-        }
-        catch (e) {
-            console.log(e)
-        }
+        const menu = await new MenuModel(myBody)
+        await menu.save()
+        return res.status(200).send({
+            code: 200,
+            success: true,
+            data: menu,
+            message: "route found"
+        })
 
     }
     async getOne(req,res){
