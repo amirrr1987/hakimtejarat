@@ -1,7 +1,5 @@
 <template>
-  <div class="">
-    admin
-  </div>
+  <RouterView />
 </template>
 <script setup lang="ts">
 
